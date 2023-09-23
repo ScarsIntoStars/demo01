@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+</head>
+<body>
+<h1>index page</h1>
+<div class="container">
+    <div class="card p-5 m-5">
+        <a href="/req1?p1=jh&age=30">query string</a> <br>
+        <a href="/req2/aaa">path variable</a> <br>
+        <form action="/req3" method="post">
+            p1 : <input type="text" name="name">
+            age : <input type="text" name="age">
+            <input type="submit" value="전송">
+        </form> <br>
+    <a href="/req4">변수 하나 출력하기</a>
+    </div>
+</div>
+</body>
+</html>
