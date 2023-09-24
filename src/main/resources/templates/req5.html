@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="card p-5 m-5">
+<!--        DTO값 출력 : [[{$demo}]]-->
+        <br>
+        태그로 출력
+        <p th:text="${demo.id}"></p>
+        <p th:text="${demo.name}"></p>
+        <p th:text="${demo.age}"></p>
+    </div>
+</div>
+</body>
+</html>

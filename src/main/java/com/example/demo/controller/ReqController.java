@@ -1,11 +1,9 @@
 package com.example.demo.controller;
 
+import com.example.demo.dto.DemoDTO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class ReqController {
@@ -35,4 +33,13 @@ public class ReqController {
         return "req4";
     }
 
+    @GetMapping("req5")
+    public String req5(Model model) {
+        DemoDTO demoDTO = new DemoDTO();
+        demoDTO.setId(1);
+        demoDTO.setName("babo");
+        demoDTO.setAge(5);
+        model.addAttribute("demo", demoDTO);
+        return "req5";
+    }
 }
