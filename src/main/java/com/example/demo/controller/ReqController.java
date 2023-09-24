@@ -31,6 +31,7 @@ public class ReqController {
     public String req4(Model model) {
         model.addAttribute("p1", "안녕하세요");
         model.addAttribute("p2", "반갑습니다");
+        model.addAttribute("a1", "주일에도 코딩공부를 합시다!");
         return "req4";
     }
 
